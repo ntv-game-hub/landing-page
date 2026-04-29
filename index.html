@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#E0B0FF" />
-    <title>Kho Game Vui</title>
+    <meta name="theme-color" content="#5B21B6" />
+    <meta
+      name="description"
+      content="Kho game realtime: Caro, Đoán chữ, Bingo, Vòng quay thử thách — chơi nhanh, không cần đăng nhập."
+    />
+    <title>Games Hub - Kho Game Vui</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TD300QWZ96"></script>
@@ -18,21 +28,27 @@
   </head>
   <body>
     <main class="page-shell">
+      <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
+      <div class="bg-orb bg-orb-b" aria-hidden="true"></div>
+
       <header class="topbar">
         <a class="brand" href="./" aria-label="Kho Game Vui">
           <span class="brand-mark">G</span>
-          <span>Kho Game Vui</span>
+          <span class="brand-text">Kho Game Vui</span>
         </a>
         <span class="status-pill">
-          <span></span>
-          3 game đang mở
+          <span class="status-dot" aria-hidden="true"></span>
+          4 game đang mở
         </span>
       </header>
 
       <section class="hero">
         <div class="hero-copy">
-          <span class="eyebrow">Realtime · Không cần đăng nhập · Chơi nhanh trên điện thoại</span>
+          <span class="eyebrow">Realtime · Không cần đăng nhập · Ưu tiên điện thoại</span>
           <h1>Chọn game để vào phòng chơi</h1>
+          <p class="hero-lead">
+            Bốn trò chơi cho lớp học và nhóm bạn: tạo phòng nhanh, mời bằng mã — mở link là chơi.
+          </p>
         </div>
       </section>
 
@@ -54,8 +70,13 @@
             <h2>Caro Multiplayer</h2>
             <p>Tạo phòng, mời bạn bè và chơi caro realtime trên bàn cờ mở rộng.</p>
           </div>
-          <a class="play-link" href="https://caro-multiplayer.onrender.com/" target="_blank" rel="noreferrer">
-            Vào game
+          <a
+            class="play-link"
+            href="https://caro-multiplayer.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Mở game
           </a>
         </article>
 
@@ -73,8 +94,13 @@
             <h2>Word Guessing</h2>
             <p>Chủ game nhập đáp án, người chơi đoán từng ô chữ và chờ chấm realtime.</p>
           </div>
-          <a class="play-link" href="https://game-word-guessing.onrender.com" target="_blank" rel="noreferrer">
-            Vào game
+          <a
+            class="play-link"
+            href="https://ntv-word-guessing.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Mở game
           </a>
         </article>
 
@@ -95,11 +121,39 @@
             <h2>Bingo Vui</h2>
             <p>Host gọi từng mục, người chơi đánh dấu bảng 5x5 và bấm Bingo khi đủ hàng.</p>
           </div>
-          <a class="play-link" href="https://game-bingo-gj95.onrender.com/" target="_blank" rel="noreferrer">
-            Vào game
+          <a class="play-link" href="https://ntv-bingo.onrender.com" target="_blank" rel="noreferrer">
+            Mở game
+          </a>
+        </article>
+
+        <article class="game-card wheel-card">
+          <div class="preview wheel-preview" aria-hidden="true">
+            <div class="wheel-scene">
+              <span class="wheel-pointer" aria-hidden="true"></span>
+              <div class="wheel-face"></div>
+            </div>
+          </div>
+          <div class="game-info">
+            <span class="game-type">Vòng quay</span>
+            <h2>Vòng Quay Thử Thách</h2>
+            <p>
+              Host tạo thử thách, quay chọn người và nhiệm vụ; cả phòng vote hoàn thành realtime.
+            </p>
+          </div>
+          <a
+            class="play-link"
+            href="https://ntv-challenge-wheel.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Mở game
           </a>
         </article>
       </section>
+
+      <footer class="page-foot">
+        <p>Game mở trong tab mới. Cần trợ giúp, xem từng trò trong repo tương ứng.</p>
+      </footer>
     </main>
   </body>
 </html>
