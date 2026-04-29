@@ -230,6 +230,9 @@ p {
 .game-card:nth-child(4) {
   animation-delay: 0.2s;
 }
+.game-card:nth-child(5) {
+  animation-delay: 0.25s;
+}
 
 @keyframes card-in {
   from {
@@ -315,6 +318,76 @@ p {
   font-size: 1.65rem;
   font-weight: 800;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hangman-preview {
+  position: relative;
+  align-content: center;
+  gap: 18px;
+  padding: 20px;
+  background: linear-gradient(145deg, #e0f2fe, #bbf7d0 52%, #fef3c7);
+}
+
+.hangman-lines {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hangman-lines span {
+  width: 34px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--ink);
+  font-size: 1.2rem;
+  font-weight: 900;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.mini-hangman {
+  position: relative;
+  width: 120px;
+  height: 92px;
+  justify-self: center;
+}
+
+.mini-hangman span {
+  position: absolute;
+  display: block;
+  background: #334155;
+  border-radius: 999px;
+}
+
+.mini-hangman span:nth-child(1) {
+  left: 18px;
+  bottom: 8px;
+  width: 86px;
+  height: 7px;
+}
+
+.mini-hangman span:nth-child(2) {
+  left: 32px;
+  bottom: 8px;
+  width: 7px;
+  height: 72px;
+}
+
+.mini-hangman span:nth-child(3) {
+  left: 32px;
+  top: 10px;
+  width: 56px;
+  height: 7px;
+}
+
+.mini-hangman span:nth-child(4) {
+  left: 82px;
+  top: 17px;
+  width: 7px;
+  height: 38px;
 }
 
 .bingo-preview {
